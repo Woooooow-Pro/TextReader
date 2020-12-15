@@ -4,7 +4,7 @@ import os
 
 
 database_path = 'Data/data/book_data.db'
-WordPerPage = 2000
+WordPerPage = 1500
 
 def register(data):
     with sqlite3.connect(database_path) as conn:

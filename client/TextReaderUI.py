@@ -49,7 +49,7 @@ class Read_area(QtWidgets.QWidget):
         
         self.textbrower = QtWidgets.QTextBrowser(self)
         self.textbrower.setText(text)
-        self.textbrower.setStyleSheet("font-family:Anonymous Pro for Powerline")
+        self.textbrower.setStyleSheet("font:18pt \"Anonymous Pro for Powerline\";")
         self.textbrower.setFixedWidth(1266)
 
         self.FirstButton = QtWidgets.QPushButton("")
