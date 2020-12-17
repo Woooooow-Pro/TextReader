@@ -38,5 +38,5 @@ python3 main.py
 
 ## Contributors
 
-- [Woooooow~](https://github.com/Woooooow-Pro)
 - [Revnize](https://github.com/Revnize)
+- [Woooooow~](https://github.com/Woooooow-Pro)
