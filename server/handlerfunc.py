@@ -2,6 +2,25 @@ import socket
 import sqlite3
 import os
 
+def test(arg: int):
+    print(f"{arg}test success!")
+
+class ServerDispatchTable():
+    table = {
+        # 'test':         test,
+        'Register':     register,
+        'Login':        login,
+        'GetTitle':     get_title,
+        'GetPath':      get_path,
+        'AddPath':      add_path,
+        'GetRecord':    get_record,
+        'AddRecord':    add_record,
+        'GetLastPage':  get_last_page,
+        'GetContent':   get_content,
+        'DeletePath':   delete_path
+    }
+    def run(self, fun: str, arg):
+        return self.table[fun](*arg)
 
 database_path = 'Data/data/book_data.db'
 WordPerPage = 1500
